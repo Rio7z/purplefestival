@@ -1,0 +1,44 @@
+include nav
+section#information
+  h1 INFORMATION
+  .flex.flex-wrap.slim.padhold2
+    .col-1
+      h2 FESTIVAL DATES
+      p Lorem ipsum dolor sit amet, dolor liberavisse vim ei, vim nulla probatus sensibus ut. Tamquam persius vel ea. Ea graeco corpora cum, in soluta volumus propriae sea. Sea modo labitur ut, labitur eruditi at cum. Vel sint utinam deterruisset et, vel tollit impetus maluisset cu.
+    .col-1
+      h2 LOST PROPERTY
+      p Lorem ipsum dolor sit amet, dolor liberavisse vim ei, vim nulla probatus sensibus ut. Tamquam persius vel ea. Ea graeco corpora cum, in soluta volumus propriae sea. Sea modo labitur ut, labitur eruditi at cum. Vel sint utinam deterruisset et, vel tollit impetus maluisset cu.
+    .col-1
+      h2 AGE RESTRICTIONS
+      p Lorem ipsum dolor sit amet, dolor liberavisse vim ei, vim nulla probatus sensibus ut. Tamquam persius vel ea. Ea graeco corpora cum, in soluta volumus propriae sea. Sea modo labitur ut, labitur eruditi at cum. Vel sint utinam deterruisset et, vel tollit impetus maluisset cu.
+    .col-1
+      h2 VALID ID
+      p Lorem ipsum dolor sit amet, dolor liberavisse vim ei, vim nulla probatus sensibus ut. Tamquam persius vel ea. Ea graeco corpora cum, in soluta volumus propriae sea. Sea modo labitur ut, labitur eruditi at cum. Vel sint utinam deterruisset et, vel tollit impetus maluisset cu.
+    .col-1
+      h2 DISABILITY
+      p Lorem ipsum dolor sit amet, dolor liberavisse vim ei, vim nulla probatus sensibus ut. Tamquam persius vel ea. Ea graeco corpora cum, in soluta volumus propriae sea. Sea modo labitur ut, labitur eruditi at cum. Vel sint utinam deterruisset et, vel tollit impetus maluisset cu.
+    .col-1
+      h2 DRUG POLICY
+      p Lorem ipsum dolor sit amet, dolor liberavisse vim ei, vim nulla probatus sensibus ut. Tamquam persius vel ea. Ea graeco corpora cum, in soluta volumus propriae sea. Sea modo labitur ut, labitur eruditi at cum. Vel sint utinam deterruisset et, vel tollit impetus maluisset cu.
+    .col-1
+      h2 BANNED ITEMS
+      p Lorem ipsum dolor sit amet, dolor liberavisse vim ei, vim nulla probatus sensibus ut. Tamquam persius vel ea. Ea graeco corpora cum, in soluta volumus propriae sea. Sea modo labitur ut, labitur eruditi at cum. Vel sint utinam deterruisset et, vel tollit impetus maluisset cu.
+  .title-bar LOCATION
+
+#map(style='width:100%;height:600px')
+script.
+  function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(50.778395, -1.088251);
+  var mapOptions = {center: myCenter, zoom: 15};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+  var marker = new google.maps.Marker({
+  position: myCenter,
+  animation: google.maps.Animation.BOUNCE
+  });
+  marker.setMap(map);
+  }
+
+script(src='https://maps.googleapis.com/maps/api/js?callback=myMap')
+
+include footer
